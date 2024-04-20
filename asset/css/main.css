@@ -117,7 +117,7 @@ ul {
   background-color: var(--color-black);
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 46%;
   transform: translate(-50%, -50%);
 }
 
@@ -586,6 +586,58 @@ ul {
   left: 0;
   background-color: var(--primary-color);
   opacity: 0.2;
+}
+
+.copilot {
+  margin: 136px auto 72px;
+  max-width: 1195px;
+}
+.copilot-link {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.copilot-content {
+  max-width: 597px;
+  margin: 0;
+}
+.copilot-img {
+  height: 100%;
+}
+
+.seeMore {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 44px;
+}
+.seeMore-title {
+  text-align: center;
+}
+.seeMore-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.seeMore-item {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 8px;
+  transition: all 0.2s linear;
+}
+.seeMore-item::after {
+  content: ">";
+  color: var(--primary-color);
+  margin-left: 8px;
+}
+.seeMore-item:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */
