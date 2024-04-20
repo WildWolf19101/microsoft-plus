@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1476px;
+  height: 54px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &-item {
+    padding: 16px 6px 16px 10px;
+  }
+
+  &-text {
+    color: var(--color-black);
+    @include text(600, 18px, 1.5);
+  }
+
+  &-image {
+    @include size(108px, 23px);
+  }
+
+  &::before {
+    content: "";
+    width: 2px;
+    height: 50%;
+    background-color: var(--color-black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transform: translate(-40%, -6%);
+
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 16px 8px 10px;
+    position: relative;
+    transition: all 1s linear;
+
+    &:hover::after {
+      content: "";
+      width: 85%;
+      height: 2px;
+      background-color: var(--color-black);
+      bottom: 8px;
+      left: 7px;
+      position: absolute;
+    }
+  }
+
+  &-text {
+    color: var(--color-black);
+    @include text(400, 13px, 1.5);
+  }
+
+  &-icon {
+    @include size(13px);
+    color: var(--color-black);
+  }
+}
+
+.button-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-right: 10px;
+  position: relative;
+  transition: all 1s linear;
+
+  &:hover::after {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: var(--color-black);
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.search {
+  &-text {
+    @include text(400, 13px, 1.5);
+  }
+
+  &-icon {
+    @include size(16px, 18px);
+    transform: scaleX(-1);
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  &-item {
+    padding: 8px 8px;
+    @include text(400, 13px, 1.5);
+    color: var(--color-black);
+    border-radius: 3px;
+    position: relative;
+
+    &:hover::after {
+      content: "";
+      width: 90%;
+      height: 2px;
+      background-color: var(--color-black);
+      bottom: 5px;
+      left: 5px;
+      position: absolute;
+    }
+
+    &:nth-child(3) {
+      background-color: var(--color-black);
+      color: var(--color-white);
+    }
+  }
+
+  &-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+  }
+}
+
+.login {
+  &-text {
+    @include text(400, 13px, 1.5);
+  }
+
+  &-image {
+    @include size(32px);
+    object-fit: cover;
+  }
+}

@@ -1,2 +1,7 @@
+@import "./Abstracts/variable";
+@import "./Abstracts/mixin";
+
 @import "./Base/reset";
-@import "./Base/mixin";
+@import "./Base/typography";
+
+@import "./Layout/header";
