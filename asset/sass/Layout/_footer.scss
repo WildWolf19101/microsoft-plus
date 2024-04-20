@@ -1,0 +1,96 @@
+.block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.footer {
+    background-color: var(--color-white1);
+    margin: 0 auto;
+    max-width: 1476px;
+
+    &-top {
+        padding: 35px 73px;
+    }
+
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    &-item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &-heading {
+        @include text(600, 15px, 1.2);
+        color: #616161;
+    }
+
+    &-tag {
+        @include text(400, 11px, 1.2);
+        color: var(--color-black);
+        transition: all 0.2s linear;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-bottom {
+        padding: 30px 73px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &-link {
+        @include text(400, 11px, 1.2);
+        color: var(--color-black);
+        transition: all 0.2s linear;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-microsoft {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 27px;
+    }
+}
+
+.locale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    &-icon {
+        @include size(24px);
+    }
+}
+
+.microsoft {
+    &-link {
+        @include text(400, 11px, 1.2);
+        color: var(--color-black);
+        transition: all 0.2s linear;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
