@@ -1,0 +1,137 @@
+.find {
+    &-title {
+        padding: 96px 0 24px;
+        text-align: center;
+    }
+
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(314px, 1fr));
+        max-width: 1328px;
+        margin: 0 auto;
+        gap: 24px;
+    }
+
+    &-item {
+        box-shadow: #00000021 0px 6px 14px 0px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: inherit;
+
+        &:first-child .item-top,
+        &:last-child .item-top {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+        }
+    }
+}
+
+.item {
+    &-top {
+        background-color: var(--primary-color);
+        padding: 16px 24px;
+        margin-bottom: 8px;
+        width: 100%;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--color-white);
+    }
+
+    &-title {
+        @include text(600, 29px, 1.2);
+        color: var(--color-black);
+        margin: 0 auto 24px;
+        padding: 0 24px;
+        text-align: center;
+    }
+
+    &-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &-textNode {
+        @include text(400, 14px, 1.2);
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    &-button {
+        background-color: var(--primary-color);
+        padding: 10px 12px;
+        border-radius: 2px;
+        color: var(--color-white);
+        margin: 18px 24px;
+        transition: all 0.2s linear;
+        width: 220px;
+        text-align: center;
+
+        &:hover {
+            box-shadow: #00000021 0px 2px 4px 0px;
+        }
+    }
+
+    &-try {
+        @include text(600, 16px, 1.5);
+        color: var(--primary-color);
+        margin-bottom: 16px;
+
+        &::after {
+            content: ">";
+            color: var(--primary-color);
+            margin-left: 8px;
+        }
+    }
+
+    &-small {
+        @include text(400, 16px);
+        margin-bottom: 24px;
+    }
+
+    &-lists {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 40px;
+        padding: 0 24px;
+
+        h4 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &-list {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        @include text(400, 14px, 1.5);
+    }
+
+    &-check {
+        @include size(16px);
+        color: var(--primary-color);
+    }
+}
+
+.success {
+    text-align: center;
+
+    &-money-munber {
+        @include text(600, 37px, 1.2);
+        color: var(--primary-color);
+    }
+
+    &-money-text {
+        @include text(400, 14px, 1.2);
+    }
+}

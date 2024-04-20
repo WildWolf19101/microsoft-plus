@@ -25,3 +25,9 @@ ul {
 .container {
   margin: 0 auto;
 }
+
+.title {
+  &-h4 {
+    @include text(600, 14px, 1.2);
+  }
+}
