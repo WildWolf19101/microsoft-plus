@@ -493,6 +493,9 @@ ul {
   font-size: 14px;
   line-height: 1.5;
 }
+.item-list span {
+  width: 100%;
+}
 .item-check {
   width: 16px;
   height: 16px;

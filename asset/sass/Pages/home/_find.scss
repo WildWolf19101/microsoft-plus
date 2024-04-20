@@ -115,6 +115,10 @@
         align-items: flex-start;
         gap: 10px;
         @include text(400, 14px, 1.5);
+
+        span {
+            width: 100%;
+        }
     }
 
     &-check {
