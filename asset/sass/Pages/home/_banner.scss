@@ -1,0 +1,52 @@
+.button1 {
+    color: var(--color-white);
+    background-color: var(--primary-color);
+}
+
+.button2 {
+    color: var(--color-blue);
+    background-color: inherit;
+    border: 2px solid var(--color-blue1);
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white1);
+
+    &-content {
+        width: 674px;
+        padding: 48px;
+        margin-left: 24px;
+    }
+
+    &-h1 {
+        @include text(600, 50px, 1.2);
+        margin-bottom: 24px;
+    }
+
+    &-text {
+        @include text(400, 16px, 24px);
+        margin-bottom: 16px;
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        &__button {
+            border-radius: 2px;
+            padding: 10px 12px;
+            @include text(600, 16px, 1);
+        }
+    }
+
+    &-image {
+        flex: 1;
+    }
+
+    &-img {
+        height: 492px;
+    }
+}
