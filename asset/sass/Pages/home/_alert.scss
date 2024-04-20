@@ -1,0 +1,13 @@
+.alert {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-text {
+        color: var(--color-white);
+        @include text(400, 16px, 1.5);
+    }
+}
