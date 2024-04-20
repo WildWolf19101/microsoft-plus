@@ -311,4 +311,70 @@ ul {
   height: 492px;
 }
 
+.download-top {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.download-h2 {
+  margin-bottom: 20px;
+}
+.download-text {
+  max-width: 652px;
+  text-align: center;
+}
+.download-bottom {
+  max-width: 1600px;
+  padding: 0 74px;
+}
+.download-container {
+  background-color: var(--color-white1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download-content {
+  max-width: 885px;
+  width: 100%;
+  padding: 48px;
+}
+.download-node {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+.download-img {
+  height: 100%;
+}
+.download-file {
+  display: inline-block;
+  padding: 10px 12px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.title-h2 {
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 1.2;
+  color: var(--color-black);
+}
+.title-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-black);
+}
+
+.content-h2 {
+  margin-bottom: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
